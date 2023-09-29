@@ -1,0 +1,1 @@
+<div class="bg-success">BRAVO galerie créer</div>
