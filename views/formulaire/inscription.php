@@ -5,7 +5,7 @@
     
     <div class="dropMenu">
 
-<!-- CONNEXION --> 
+<!-- CONNEXION -->
 
         <form method="POST" action="index.php?page=login" >
 
@@ -70,7 +70,7 @@
                 </div>
                 <input type="hidden" name="csrftoken" value="<?=$token?>">
 
-            </div>    
+            </div>
  
         </form>
 

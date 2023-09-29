@@ -32,7 +32,7 @@
 
 </head>
 
-<body> 
+<body>
 
         <?php include 'views/nav.php' ?>
         

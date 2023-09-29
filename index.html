@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" >
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/fonction.js"></script>
+    <script src="assets/js/execution.js" defer></script>
+
+    <title>SharePlay</title>
+
+</head>
+
+<body>
+
+    <header class="container-fluid p-0">
+        <nav id="navbar" class="navbar navbar-expand-lg px-4">
+            
+            <a id="navGauche" class="navbar-brand" href="#">
+                <img id="logo1" class="rounded-circle" src="assets/images/logo-shareplay.png" alt="logo" />
+                <span id="nomSite" class="text-capitalize">sharePlay</span>
+            </a>
+
+
+            <div id="creerGalerie">
+                <div class="btnCreer">
+                    <button id="navBtn" class="btn">Créer une galerie</button>
+                </div> 
+                
+                <form action="" enctype="multipart/form-data">
+                    <div id="dropCreer">
+                        <div class="titre">
+                            <h3>Créer vôtre galerie</h3>
+                        </div>
+                        <div id="choixJeux">
+                            <h4>Choisir un jeu ou un univers de jeu</h4>
+
+
+                            <div class="jeux">
+                                <label for="Jeux">Jeux</label>
+
+                                <select id="Jeux" name="Jeux">
+                                    <option value="Tchia">Tchia</option>
+                                    <option value="Resident Evil 8">Resident Evil 8</option>
+                                    <option value="Call of Duty">Call of Duty</option>
+                                </select>
+                            </div>    
+
+                            <div class="univers">
+
+                                <label for="univers">Univers</label>
+
+                                <select id="univers" name="univers">
+                                    <option value="Action">Action</option>
+                                    <option value="Aventure">Aventure</option>
+                                    <option value="Jeu indée">Jeu indée</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div id="choixTags">
+                            <h4>Ajouter des tags</h4>
+                            <input type="text" id="fname" name="firstname" placeholder="Entrer un tag (facultatif)">
+                        </div>
+
+                        <div id="ajoutImg">
+                            <h4>5 images restantes</h4>
+                            <i class="fa-solid fa-circle-plus fa-2xl"></i>
+                            <h4>Ajouter une image</h4>
+                            <span>jpg, png 5Mo max - 5 images max</span>
+                        </div>
+
+                        <div id="choixGalerie">
+                            <h4>Choisir le type de galerie</h4>
+
+                            <select id="typeGaleries" name="typeGaleries">
+                                <option value="Classique">Classique</option>
+                                <option value="3D">3D</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="btnValider">
+                            <input type="submit" name="creer" value="valider">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div class="dropAction">
+                
+                <div class="dropProfil">
+                    <img id="btnDrop" src="assets/images/photo-profil.jpg" alt="photo de profil">
+                </div>
+
+                <div class="dropMenu">
+                    <div class="profil">
+                        <img src="assets/images/photo-profil.jpg" alt="photo de profil">
+                        <h3>Dylan Kirsch
+                            <span>Kurama-X9</span>
+                        </h3>
+                        
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                Paramètre du profil
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-rectangle-history-circle-user"></i>
+                                Mes galeries
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-ball-pile"></i>
+                                Toutes les communautés
+                            </a>
+                        </li>
+
+                        <li class="deconnection">
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Déconnection
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+<!-- CAROUSEL --> 
+
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="cImg d-block" src="assets/images/jeux/dead-island-2.jpg" alt="dead island 2">
+                    <div class="description text-white d-none d-md-block ">
+                        <h1>Dead Island 2</h1>
+                        <p class="paraCarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat tortor consectetur arcu lacinia varius. Aenean facilisis libero eros, id feugiat turpis dapibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="cImg d-block" src="assets/images/jeux/sun-wukong.png" alt="Black Myth Wukong">
+                    <div class=" description text-white d-none d-md-block">
+                        <h1>Black Myth Wukong</h1>
+                        <p class="paraCarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat tortor consectetur arcu lacinia varius. Aenean facilisis libero eros, id feugiat turpis dapibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="cImg d-block" src="assets/images/jeux/tchia-ps5.png" alt="Black Myth Wukong">
+                    <div class=" description text-white d-none d-md-block">
+                        <h1>Tchia</h1>
+                        <p class="paraCarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat tortor consectetur arcu lacinia varius. Aenean facilisis libero eros, id feugiat turpis dapibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+    </header>    
+
+    
+
+<!-- AJOUT RECENT -->
+
+    <section id="ajoutRecent">
+
+        <h1 class="ajout px-4">Ajout récent</h1>
+
+        
+        <div id="list">
+
+            <div class="itemRecent">
+                <div class="card">
+                    <img src="assets/images/jeux/dead-island-2.jpg">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Dead Island 2</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/jeux/sun-wukong.png">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Univers: aventure</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/jeux/tchia-ps5.png">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Univers: Jeux indée</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemRecent">
+                <div class="card">
+                    <img src="assets/images/jeux/dead-island-2.jpg">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Univers: Combat</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/jeux/sun-wukong.png">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Black Myst Wukong</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+                <div class="card carte">
+                    <img src="assets/images/jeux/tchia-ps5.png">
+                    <div class="overley1 card-img-overlay d-flex flex-column justify-content-between">
+                        <h3 class="card-title">Univers: Combat</h3>
+                        <h4 class="card-text">Kurama-X9</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="direction">
+            <button id="btnPrev">
+                <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
+            </button>
+            <button id="btnNext">
+                <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
+            </button>
+        </div>
+
+    </section>
+
+<!-- UNIVER LE PLUS REGARDER -->
+
+    <section id="universPlusRegarder">
+
+        <h1 class="universRegarder px-4">Univers le plus regarder</h1>
+
+
+        <div class="itemRegarder">
+            <div class="card plusRegarder">
+                <img src="assets/images/jeux/demon-souls-ps5.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Action</h3>
+                </div>
+            </div>
+            <div class="card plusRegarder">
+                <img src="assets/images/univers/jeux-aventure.png">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Aventure</h3>
+                </div>
+            </div>
+            <div class="card plusRegarder">
+                <img src="assets/images/univers/jeux-combat.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Combat</h3>
+                </div>
+            </div>
+
+            <div class="card plusRegarder">
+                <div id="all">
+                    <div class="multiple">
+                        <img src="assets/images/jeux/final-fantasy-7.jpg" alt="">
+                    </div>
+                    <div class="multiple">
+                        <img src="assets/images/jeux/battlefield-2042.jpeg" alt="">
+                    </div>
+                    <div class="multiple">
+                        <img src="assets/images/univers/jeux-aventure.png" alt="">
+                    </div>
+                    <div class="multiple">
+                        <img src="assets/images/jeux/demon-souls-ps5.jpg" alt="">
+                    </div>
+                </div>                
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Univers: Multiples</h3>
+                </div>
+            </div>
+
+            <div class="card plusRegarder">
+                <img src="assets/images/univers/jeux-course.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Course</h3>
+                </div>
+            </div>
+            <div class="card plusRegarder">
+                <img src="assets/images/univers/jeux-horror.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Survival Horror</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- JEUX LES PLUS REGARDER -->
+
+    <section id="jeuxPlusRegarder">
+
+        <h1 class="jeuxRegarder">Jeux les plus regarder</h1>
+ 
+        <div class="itemJeux">
+
+            <div class="card jeux">
+                <img src="assets/images/jeux/atomic-heart.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Atomic Heart</h3>
+                </div>
+            </div>
+
+            <div class="card jeux">
+                <img src="assets/images/jeux/destiny-2-lightfall.jpeg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Destiny 2</h3>
+                </div>
+            </div>
+        
+            <div class="card jeux">
+                <img src="assets/images/jeux/hogwarts-legacy.png">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Hogwarts Legacy</h3>
+                </div>
+            </div>
+
+            <div class="card jeux">
+                <img src="assets/images/jeux/elden-ring.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Elden Ring</h3>
+                </div>
+            </div>
+
+            <div class="card jeux">
+                <img src="assets/images/jeux/demon-souls-ps5.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Demon Souls</h3>
+                </div>
+            </div>
+
+            <div class="card jeux">
+                <img src="assets/images/jeux/star-wars-jedi-survivor.jpg">
+                <div class="overley2 card-img-overlay d-flex">
+                    <h3 class="card-title">Star Wars: jedi survivor</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- FOOTER -->
+
+    <footer class="mt-5 px-5 py-3 text-white bg-dark d-flex justify-content-between">
+
+        <h4>Cookie</h4>
+        <h4>Mention Legale</h4>
+        <h4>FAQ</h4>
+        <h4>Contact</h4>
+
+    </footer>
+    
+</body>
+
+</html>

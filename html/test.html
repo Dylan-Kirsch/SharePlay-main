@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/test.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" >
+
+    <script src="assets/js/fonction.js" defer></script>
+    <script src="assets/js/execution.js" defer></script>
+
+    <title>test grid</title>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+
+        <a id="navGauche" class="navbar-brand" href="#">
+            <img id="logo1" class="rounded-circle" src="../assets/images/logo-shareplay.png" alt="logo" />
+            <span id="nomSite" class="text-capitalize">sharePlay</span> 
+        </a>
+
+        <div id="creerGalerie">
+            <div class="btnCreer">
+                <button id="navBtn" class="btn">Créer une galerie</button>
+            </div> 
+            
+            <form action="" enctype="multipart/form-data">
+                <div id="dropCreer">
+                    <div class="titre">
+                        <h3>Créer vôtre galerie</h3>
+                    </div>
+                    <div id="choixJeux">
+                        <h4>Choisir un jeu ou un univers de jeu</h4>
+
+
+                        <div class="jeux">
+                            <label for="Jeux">Jeux</label>
+
+                            <select id="Jeux" name="Jeux">
+                                <option value="Tchia">Tchia</option>
+                                <option value="Resident Evil 8">Resident Evil 8</option>
+                                <option value="Call of Duty">Call of Duty</option>
+                            </select>
+                        </div>    
+
+                        <div class="univers">
+
+                            <label for="univers">Univers</label>
+
+                            <select id="univers" name="univers">
+                                <option value="Action">Action</option>
+                                <option value="Aventure">Aventure</option>
+                                <option value="Jeu indée">Jeu indée</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div id="choixTags">
+                        <h4>Ajouter des tags</h4>
+                        <input type="text" id="fname" name="firstname" placeholder="Entrer un tag (facultatif)">
+                    </div>
+
+                    <div id="ajoutImg">
+                        <h4>5 images restantes</h4>
+                        <i class="fa-solid fa-circle-plus fa-2xl"></i>
+                        <h4>Ajouter une image</h4>
+                        <span>jpg, png 5Mo max - 5 images max</span>
+                    </div>
+
+                    <div id="choixGalerie">
+                        <h4>Choisir le type de galerie</h4>
+
+                        <select id="typeGaleries" name="typeGaleries">
+                            <option value="Classique">Classique</option>
+                            <option value="3D">3D</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="btnValider">
+                        <input type="submit" name="creer" value="valider">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="dropAction">
+                
+            <div class="dropProfil">
+                <img id="btnProfil" src="../assets/images/photo-profil.jpg" alt="photo de profil">
+            </div>
+
+            <div class="dropMenu">
+                <div class="profil">
+                    <img src="../assets/images/photo-profil.jpg" alt="photo de profil">
+                    <h3>Dylan Kirsch
+                        <span>Kurama-X9</span>
+                    </h3>
+                    
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Paramètre du profil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-rectangle-history-circle-user"></i>
+                            Mes galeries
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-ball-pile"></i>
+                            Toutes les communautés
+                        </a>
+                    </li>
+
+                    <li class="deconnection">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Déconnection
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        
+
+    </nav>
+
+
+    
+</body>
+</html>

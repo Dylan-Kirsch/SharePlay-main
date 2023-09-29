@@ -1,0 +1,69 @@
+.dropProfil #btnDrop {
+    width: 37%;
+    border-radius: 60px;
+}
+
+/* ******************* CONNECTION ******************** */
+
+.dropMenu #connexion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropMenu h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Sansita', sans-serif;
+    margin-bottom: 40px;
+}
+
+.dropMenu #inscrire {
+    width: 100%;
+    margin-bottom: 60px;
+    height: 25px;
+    text-align: end;
+    font-size: 0.7em;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.dropMenu #inscrire p {
+    cursor: pointer;
+    width: 58%;
+    float: right;
+}
+
+
+.dropMenu #identifiant{
+    width: 75%;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.dropMenu #password{
+    width: 75%;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.dropMenu input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.dropMenu #identifiant input, #password input {
+    width: 100%;
+}
+
+.dropMenu #bouton input {
+    border: none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #0064e7;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Sansita', sans-serif;
+}

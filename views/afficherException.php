@@ -1,0 +1,1 @@
+<div class="bg-danger m-2"> ERREUR: <?=$reponse->getException()->getMessage()?></div>

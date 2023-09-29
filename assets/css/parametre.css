@@ -1,0 +1,168 @@
+body {
+    background-color: #f8f8f8;
+}
+
+#infoGlobal {
+    display: flex;
+    margin-top: 1%;
+}
+
+#parametreG {
+    width: 32%;
+    height: 89vh;
+    border-right: 5px solid #cacaca;
+}
+
+#paraProfil {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#paraProfil img {
+    width: 41%;
+    border-radius: 4px;
+}
+
+.profile {
+    margin-left: 13%;
+    text-transform: capitalize;
+    font-family: 'Sansita', sans-serif;
+}
+
+.profile p:nth-last-child(3) {
+    font-weight: 600;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.profile p:nth-last-child(2) {
+    font-size: 1.3em;
+    color: #5e5e5e;
+    margin: 9px 0 0 51px;
+    font-family: 'EB Garamond', serif;
+}
+
+.profile p:nth-last-child(1) {
+    color: #000;
+    margin: 8px 0 0 50px;
+}
+
+.infoCompte {
+    margin: 15% 0 0 14%;
+}
+
+.infoCompte p:nth-last-child(2) {
+    font-family: 'Sansita', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.infoCompte i {
+    margin-right: 15px;
+}
+
+.infoCompte p:nth-last-child(1) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5em;
+    padding: 5px 38px;
+    background-color: #e4e4e4;
+    margin-right: 50px;
+}
+
+#parametreD {
+    width: 70%;
+    margin-left: 5%;
+}
+
+#parametreD h1 {
+    margin: 0;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.4em;
+}
+
+.infoNom {
+    display: flex;
+    border-bottom: 1px solid #bebebe;
+    margin: 10% 5% 0 22px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoNom p:nth-child(1) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.infoNom p:nth-last-child(2) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+
+.infoLangue {
+    display: flex;
+    border-bottom: 1px solid #bebebe;
+    margin: 10% 5% 0 22px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoLangue p:nth-child(1) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.infoLangue p:nth-last-child(2) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+.infoAdresse {
+    display: flex;
+    border-bottom: 1px solid #bebebe;
+    margin: 10% 5% 0 22px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoAdresse p:nth-child(1) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.infoAdresse p:nth-last-child(2) {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+.infoAdresse button, .infoLangue button, .infoNom button {
+    font-size: 1.1em;
+}
+
+.infoAdresse button:hover, .infoLangue button:hover, .infoNom button:hover {
+    background-color: #fff;
+    border: 3px solid #8bc3ff;
+    cursor: pointer;
+}
+
+.enregistrer {
+    margin: 6% 6% 0 0;
+    float: right;
+    cursor: pointer;
+}
+
+.enregistrer input {
+    padding: 7%;
+    font-size: 1.1em;
+}
+
+a.close {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 29px;
+    text-decoration-line: none;
+}

@@ -1,0 +1,726 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+#navbar {
+    background-color: #00000077;
+    border-radius: 10% 36% 98% 0% / 0% 0% 32% 0%;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 8px 4px;
+}
+
+#nomSite {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Metal Mania', cursive;
+}
+
+#navGauche {
+    width: 50%;
+    padding: 0;
+}
+
+#navGauche #logo1 {
+    width: 19%;
+}
+
+#connectInscri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leProfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navBtn { 
+    border-radius: 30px;
+    background-color: rgb(0, 100, 231);
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+}
+
+
+/* ******************************** */
+
+.dropAction {
+    width: 13%;
+    height: 13vh;
+    margin-right: 4%;
+}
+
+.dropMenu {
+    display: none;
+    width: 208%;
+    border-radius: 5px;
+    box-shadow: 0px 7px 13px -4px #0000005c;
+    background-color: #fff;
+    text-align: start;
+    position: relative;
+    right: 75%;
+    padding: 25px 20px;
+}
+
+
+/* ************** ****************** */
+
+#creerGalerie {
+    height: 6vh;
+    width: 33%;
+}
+
+.btnCreer {
+    display: flex;
+    justify-content: center;
+}
+
+#dropCreer {
+    display: flex;
+    padding: 3%;
+    margin-top: 5%;
+    background-color: #fff;
+    box-shadow: 0px 7px 13px -4px #0000005c;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 98%;
+    visibility: hidden;
+}
+
+.titre {
+    margin-left: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.titre h1 {
+    font-size: 2.2em;
+    font-family: 'Sansita', sans-serif;
+    font-weight: 800;
+}
+
+#choixJeux {
+    display: flex;
+    border: 1px solid #000;
+    margin-top: 3%;
+    padding: 3%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#choixJeux h1 {
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    font-family: 'Sansita', sans-serif;
+    width: 100%;
+}
+
+#jeux {
+    margin-right: 2%;
+}
+
+#choixTags {
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border: 1px solid #000;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#choixTags h1 {
+    margin: 0 13% 0 0;
+    font-size: 1.5em;
+    font-family: 'Sansita', sans-serif;
+}
+
+#choixTags input {
+    font-size: 0.9em;
+}
+
+#ajoutImg {
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#ajoutImg input {
+    margin: 40px;
+}
+
+#ajoutImg h2 {
+    font-size: 1em;
+    font-family: 'EB Garamond', serif;
+}
+
+#ajoutImg i {
+    margin: 16% 0%;
+    text-align: center;
+    font-size: 5em;
+}
+
+#ajoutImg h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+#ajoutImg span {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.choixGalerie {
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.choixGalerie label {
+    font-size: 1.4em;
+    font-family: 'Sansita', sans-serif;
+    margin-right: 20px;
+}
+
+.btnValider {
+    margin: 3%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.btnValider input {
+    font-size: 1.6em;
+    padding: 0% 5%;
+    border: none;
+    border-radius: 30px;
+    background: #0064e7;
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+    font-weight: 600;
+}
+
+
+/* ******* CAROUSEL ************ */
+
+#carousel {
+    margin-top: -8%;
+}
+
+.carousel, .active {
+    height: 100vh;
+}
+
+.description {
+    background-color: #00000077;
+    text-align-last: start;
+    border-radius: 0% 0% 100% 0% / 0% 0% 29% 0%;
+    position: relative;
+    bottom: 174px;
+    padding: 7px 15px;
+}
+
+main h1 {
+    font-family: 'Sansita', sans-serif;
+}
+
+.paraCarousel {
+    font-size: 1.5em;
+    font-family: 'EB Garamond', serif;
+    padding-top: 15px;
+}
+
+.cImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 0% 0% 100% 0% / 0% 0% 6% 0%;
+}
+
+
+/* ****** SECTION AJOUT RECENT ******** */
+
+#ajoutRecent {
+    background-color: #ffffff;
+    position: relative;
+    top: 20px;
+    border-radius: 0% 0% 100% 0% / 0% 0% 5% 0%;
+    padding-bottom: 25px;
+}
+
+.ajout {
+    font-size: 2.2em;
+    font-family: 'Sansita', sans-serif;
+    margin: 10px 0px 35px 8px;
+}
+
+.coverImg {
+    object-fit: cover;
+    height: 18vh;
+}
+
+.direction {
+    position: relative;
+    bottom: 190px;
+    text-align-last: justify;
+}
+
+#btnPrev, #btnNext {
+    background-color: white;
+    border: none;
+}
+
+#btnPrev:hover, #btnNext:hover {
+    background-color: cornflowerblue;
+} 
+
+#btnPrev {
+    margin-left: 1%;
+}
+
+#btnNext{
+    margin-right: 2%;
+}
+
+#list {
+    margin: 2% 1%;
+    display: flex;
+}
+
+.itemRecent {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 2%;
+}
+
+.itemRecent img {
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+.itemRecent .card:nth-last-child(1) {
+    grid-column: 1 / span 2;
+}
+
+#ajoutRecent .overley1 {
+    padding: 0px;
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+}
+
+#ajoutRecent .card-title, .card-text {
+    background-color: #00000060;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+
+/* ************* SECTION UNIVERS PLUS REGARDER *************** */
+
+#universPlusRegarder {
+    background-color: #00439c;
+    padding-bottom: 4%;
+    border-radius: 0% 0% 100% 0% / 0% 0% 1.5% 0%;
+}
+
+.universRegarder {
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.2em;
+    padding-top: 4%;
+    margin: 2px 0px 35px 8px;
+}
+
+.itemRegarder {
+    display: grid;
+    gap: 25px;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1.5fr 1fr 1fr;
+    margin: 4% 5% 1% 8%;
+}
+
+.itemRegarder img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+#universPlusRegarder .card {
+    border: none;
+}
+
+.plusRegarder:nth-last-child(6) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+}
+
+.plusRegarder:nth-last-child(4) {
+    grid-column: 1 / span 2;
+}
+
+.plusRegarder:nth-last-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.plusRegarder:nth-last-child(2) {
+    grid-column: 1 / span 2;
+}
+ 
+.plusRegarder:nth-last-child(1) {
+    grid-column: 3;
+    grid-row: 3 / span 2;
+}
+
+#universPlusRegarder .overley2 {
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    background-color: #0000005e;
+    justify-content: center;
+    padding: 0;
+}
+
+#universPlusRegarder .card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#all {
+    display: grid;
+    height: -webkit-fill-available;
+    background-color: #000000;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.multiple:nth-last-child(4) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.multiple:nth-last-child(4) img, .multiple:nth-last-child(1) img {
+    border-radius: 100% 100% 0% 100% / 0% 100% 0% 100%;
+}
+
+.multiple:nth-last-child(3) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.multiple:nth-last-child(3) img, .multiple:nth-last-child(2) img {
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 100% 
+}
+
+
+
+
+/* ************* SECTION JEUX PLUS REGARDER ***************** */
+
+.jeuxRegarder {
+    color: #000000;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.2em;
+    padding-top: 4%;
+    margin: 0px 0px 35px 30px;
+}
+
+.itemJeux {
+    display: grid;
+    gap: 25px;
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    margin: 4% 5% 1% 8%;
+}
+
+.itemJeux img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+#jeuxPlusRegarder .overley2 {
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    background-color: #0000005e;
+    justify-content: center;
+    padding: 0;
+}
+
+#jeuxPlusRegarder .card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.jeux:nth-last-child(6) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.jeux:nth-last-child(4) {
+    grid-column: 1 / span 2;
+}
+
+.jeux:nth-last-child(3) {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+}
+
+.jeux:nth-last-child(2) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.jeux:nth-last-child(1) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+
+/* *********** FOOTER ********** */
+
+footer {
+    font-family: 'Sansita', sans-serif;
+}
+
+
+
+
+/* **************************** MES GALERIES ******************************************************************* */
+
+#imgGalerie img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#imgGalerie .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+    font-size: 3em;
+}
+
+#imgGalerie .overley2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000041;
+    font-size: 2em;
+}
+
+
+
+
+/* ********* GALERIES *********** */
+
+.maGalerie {
+    color: #000000;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.2em;
+    padding-top: 4%;
+    margin: 0px 0px 35px 30px;
+}
+
+.itemGalierie {
+    display: grid;
+    gap: 35px;
+    grid-template-rows: 320px 320px 320px 320px;
+    margin: 4% 5% 4% 8%;
+}
+
+.itemGalierie img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+#mesGaleries .overley2 {
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    background-color: #0000005e;
+    justify-content: center;
+    padding: 0;
+}
+
+#mesGaleries .card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.galerie {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    box-shadow: 0px 0px 8px 2px #00000050;
+}
+
+.galerie2 {
+    grid-column: 2 / span 5;
+    grid-row: 2;
+}
+
+.galerie3 {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    box-shadow: 0px 0px 8px 2px #00000050;
+}
+
+.galerie4 {
+    grid-column: 2 /span 5;
+    grid-row: 4;
+}
+
+
+
+
+/* ******************************  TOUTE LES COMMUNAUTES ************************************ */
+
+#imgComu img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#imgComu .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Sansita', sans-serif;
+    font-size: 3em;
+}
+
+#imgComu .overley2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000041;
+    font-size: 2em;
+}
+
+
+
+/* ******** TOUT LES JEUX  *************** */
+
+.jeu {
+    color: #000000;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.2em;
+    padding-top: 3%;
+    margin: 0px 0px 35px 18px;
+}
+
+.allJeux img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+.allJeux .overley2 {
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    background-color: #0000005e;
+    justify-content: center;
+    padding: 0;
+}
+
+.allJeux .card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+#toutJeux .card {
+    margin-left: 3%;
+}
+
+
+
+/* ****** TOUT LES UNIVERS ********* */
+
+#toutUnivers .univers {
+    color: #000000;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2.2em;
+    padding-top: 5%;
+    margin: 0px 0px 35px 18px;
+}
+
+.allUnivers img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+.allUnivers .overley2 {
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    background-color: #0000005e;
+    justify-content: center;
+    padding: 0;
+}
+
+.allUnivers .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+#toutUnivers .card {
+    margin-left: 3%;
+}
+
+
+
+/* ********************* RESPONSIVE *********************************************** */
+
+@media screen and (max-width: 767px) {
+
+    #navbar {
+        height: 5vh;
+        padding: 2px;
+    }
+
+    #navGauche {
+        font-size: 0.7em;
+        padding: 0;
+    }
+
+}

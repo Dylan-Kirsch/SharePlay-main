@@ -1,0 +1,331 @@
+@media screen and (max-width: 1024px) {
+
+    .dropProfil #btnDrop {
+        width: 13%;
+        font-size: 3.6em;
+    }
+
+
+/* NAV LOGO */
+
+    #navGauche {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+/* CONNEXION  */
+    
+    .dropMenu {
+        width: 262%;
+        right: 113%;
+    }
+
+    .dropMenu h1 {
+        font-size: 2em;
+    }
+
+    .dropMenu #inscrire {
+        margin-bottom: 32px;
+    }
+
+    .dropMenu #inscrire p {
+        width: 72%;
+    }
+
+    .dropMenu #identifiant {
+        margin-bottom: 45px;
+    }
+
+    .dropMenu #password {
+        margin-bottom: 57px;
+    }
+
+    .dropMenu #bouton input {
+        font-size: 1.2em;
+    }
+
+
+/* INSCRIPTION */
+
+    #seConnecter {
+        font-size: 0.7em;
+    }
+
+    #seConnecter p {
+        width: 50%;
+    }
+
+    #inscription #nom {
+        margin: 0 10px 30px 17px;
+    }
+
+    #inscription #nom, #prenom, #email {
+        width: 45%;
+    }
+
+    #inscription #pseudo {
+        width: 45%;
+        margin: 0 10px 40px 17px;
+    }
+
+    #inscription #nom input, #prenom input, #pseudo input, #email input {
+        font-size: 0.8em;
+        width: 85%;
+    }
+
+    #inscription #motDePasse {
+        margin-bottom: 63px;
+        width: 12%;
+    }
+
+    #inscription #motDePasse input {
+        font-size: 0.8em;
+    }
+
+    #inscription #bouton {
+        width: 100%;
+        text-align: center;
+    }
+
+
+/* CREER GALERIE */
+
+    .titre h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #choixJeux h1 {
+        font-size: 1.1em;
+    }
+
+    #jeux {
+        margin-bottom: 15px;
+    }
+
+    #jeux label, .univers label {
+        font-size: 0.9em;
+    }
+
+    #Jeu, #univers {
+        width: 68%;
+        font-size: 0.9em;
+    }
+
+    #choixTags {
+        flex-direction: column;
+    }
+
+    #choixTags h1 {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    #ajoutImg h2 {
+        font-size: 0.8em;
+    }
+
+    #ajoutImg input {
+        margin: 32px 0;
+        font-size: 0.8em;
+        padding-left: 25px;
+    }
+
+    #ajoutImg h1 {
+        font-size: 1.5em;
+        margin-bottom: 7px;
+    }
+
+    #ajoutImg span {
+        font-size: 0.6em;
+    }
+
+    .choixGalerie label {
+        font-size: 1.2em;
+    }
+
+
+/* PROFIL */
+
+    #leProfil {
+        width: 120%;
+        margin-top: 7px;
+    }
+
+    #leProfil span {
+        font-size: 1em;
+    }
+
+    #leProfil #btnDrop {
+        width: 39%;
+        margin: 0;
+    }
+
+    #profil .paraProfil, .mesGalerie, .touteCommu, .news {
+        font-size: 1.3em;
+    }
+
+
+
+/* CAROUSEL */
+
+    #carousel h1 {
+        font-size: 2em;
+    }
+
+    .description {
+        bottom: 154px;
+    }
+
+    .paraCarousel {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbar {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #navGauche {
+        width: 43%;
+    }
+
+    #navGauche #logo1 {
+        width: 28%;
+    }
+
+    #nomSite {
+        font-size: 1.5em;
+    }
+
+    #creerGalerie {
+        width: 16%;
+    }
+
+    #dropCreer {
+        position: relative;
+        width: 300%;
+        right: 120px;
+    }
+
+    .titre {
+        margin: 3% 11%;
+    }
+
+    .titre h1 {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
+    #jeux {
+        margin-right: 0%;
+    }
+
+    #jeux label, .univers label {
+        font-size: 0.8em;
+    }
+
+    #Jeu, #univers {
+        font-size: 0.8em;
+    }
+
+    #choixTags h1 {
+        font-size: 1.1em;
+    }
+
+    #choixTags input {
+        font-size: 0.8em;
+    }
+
+    #ajoutImg input {
+        padding-left: 55px;
+        margin: 25px 0;
+    }
+
+    #ajoutImg h1 {
+        
+        font-size: 1.3em;
+    }
+
+    .choixGalerie label {
+        font-size: 1.1em;
+    }
+
+    #typeGaleries {
+        font-size: 0.8em;
+    }
+
+    .btnValider input {
+        font-size: 1.3em;
+    }
+
+    #navBtn {
+        font-size: 0.8em;
+    }
+
+    .dropMenu {
+        width: 332%;
+        right: 200%;
+    }
+
+    .dropMenu #bouton input {
+        font-size: 1em;
+    }
+
+    .dropAction {
+        height: 11vh;
+    }
+
+    #leProfil {
+        justify-content: center;
+    }
+
+    #leProfil span {
+        display: none;
+    }
+
+    .cImg {
+        height: 76vh;
+        border-radius: 0% 0% 100% 0% / 0% 0% 4% 0%;
+    }
+    
+    #carousel {
+        height: 77vh;
+        margin-top: -10%;
+    }
+
+    #carousel h1 {
+        font-size: 1.7em;
+    }
+
+    .paraCarousel {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+
+    .description {
+        bottom: 125px;
+        padding: 5px 12px;
+        border-radius: 0% 0% 100% 0% / 0% 0% 17% 0%;
+    }
+
+    footer h4 {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    
+
+
+
+
+
+}
